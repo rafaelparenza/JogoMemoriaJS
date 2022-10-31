@@ -1,0 +1,273 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="dep/normalize.css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="dep/Font-Awesome/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body lang="en">
+	<section id="main">
+	<header id="title">
+	<h1>Rafael Parenza</h1>
+	<span class="subtitle">Developer .Net | C# | Angular | Blazor | Xamarin | MAUI | SQL Server | Mongo | Azure Devops</span>
+	</header>
+	<section class="main-block">
+	<h2>
+	<i class="fa fa-suitcase"></i> Experiences
+	</h2>
+	<section class="blocks">
+	<div class="date">
+	<span>2022</span><span>present</span>
+	</div>
+	<div class="decorator">
+	</div>
+	<div class="details">
+	<header>
+	<h3>.Net Developer - Devops FullStack Developer</h3>
+	<span class="place">.Net Developer - Devops FullStack Developer</span>
+	<span class="location">remote</span>
+	</header>
+	<div>
+	<ul>
+	<li>In this experience I started several projects, where I had the opportunity to choose the main technologies and architectures for the project.</li>
+	<li>.NET 6 · ANGULAR · Blazor · C# · Azure DevOps · HTML CSS JAVASCRIPT BOOTSTRAP · Entity Framework Core · API Gateway · Microservices · Angular (Framework) · Azure DevOps Server · ASP.NET · .NET Framework · Microsoft SQL Server · Git · Entity Framework · Microsoft Visual Studio · Metodologias Agile</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="blocks">
+	<div class="date">
+	<span>2021</span><span>2022</span>
+	</div>
+	<div class="decorator">
+	</div>
+	<div class="details">
+	<header>
+	<h3>Developer .Net - FullStack</h3>
+	<span class="place">SIGE Cloud</span>
+	<span class="location">Caxias do Sul, Brasil</span>
+	</header>
+	<div>
+	<ul>
+	<li>In this experience, I had the opportunity to maintain a SaaS system (Software as a Service) and work with various integrations such as shope, shopfy, MercadoLibre and Banks</li>
+	<li>ANGULAR · C# · SaaS · ERP · ASP.NET · .NET Framework · AngularJS · MongoDB · Git · Entity Framework · Microsoft Visual Studio · Metodologias Agile</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="blocks">
+	<div class="date">
+	<span>2019</span><span>2021</span>
+	</div>
+	<div class="decorator">
+	</div>
+	<div class="details">	
+	<header>
+	<h3>.NET Developer</h3>
+	<span class="place">Softsul</span>
+	<span class="location">Caxias do Sul, Brasil</span>
+	</header>
+	<div>
+	<ul>
+	<li>On this experience, I had the opportunity to develop an ERP system in .NET Framework</li>
+	<li>C# · ERP · ASP.NET · .NET Framework · ASP.NET MVC · Microsoft SQL Server · Entity Framework · Microsoft Visual Studio</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="blocks">
+	<div class="date">
+	<span>2017</span><span>2019</span>
+	</div>
+	<div class="decorator">
+	</div>
+	<div class="details">
+	<header>
+	<h3>Manager</h3>
+	<span class="place">Projetos Parenza</span>
+	<span class="location">Caxias do Sul, Brasil</span>
+	</header>
+	<div>
+	<ul>
+	<li>Based on this experience, I founded a company focused on the development of IOT systems</li>
+	<li>C# · Arduino IOT · ASP.NET · .NET Framework · Microsoft SQL Server · Microsoft Visual Studio</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	</section>
+	<section class="main-block">
+	<h2>
+	<i class="fa fa-folder-open"></i> Selected Projects
+	</h2>
+	<section class="blocks">
+	<div class="date">
+	<span>2015</span><span>2016</span>
+	</div>
+	<div class="decorator">
+	</div>
+	<div class="details">
+	<header>
+	<h3>Estoquimeter</h3>
+	<span class="place">Projetos Parenza</span>
+	</header>
+	<div>
+	<ul>
+	<li>iot system responsible for managing the stock of a company (projetosparenza.wordpress.com/2020/03/28/estoquimetro/)</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="blocks">
+	<div class="date">
+	<span>2020</span>
+	</div>
+	<div class="decorator">
+	</div>
+	<div class="details">
+	<header>
+	<h3>CODe</h3>
+	<span class="place">Castgroup</span>
+	</header>
+	<div>
+	<ul>
+	<li>"Code" is a project complex because he have many conections , procedure.
+This Project is used to scheduling.</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="blocks">
+	<div class="date">
+	<span>2014</span>
+	</div>
+	<div class="decorator">
+	</div>
+	<div class="details">
+	<header>
+	<h3>Some Project 3</h3>
+	<span class="place">Some workplace</span>
+	</header>
+	<div>
+	<ul>
+	<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	</section>
+	<section class="main-block concise">
+	<h2>
+	<i class="fa fa-graduation-cap"></i> Education
+	</h2>
+	<section class="blocks">
+	<div class="date">
+	<span>2015</span><span>2020</span>
+	</div>
+	<div class="decorator">
+	</div>
+	<div class="details">
+	<header>
+	<h3>Graduate, Analise e Desenvolvimento de Sistemas ( analysis and systems development )</h3>
+	<span class="place">Uniftec</span>
+	<span class="location">Caxias do Sul, Brasil</span>
+	</header>
+	</div>
+	</section>
+	<section class="blocks">
+	<div class="date">
+	<span>2013</span><span>2015</span>
+	</div>
+	<div class="decorator">
+	</div>
+	<div class="details">
+	<header>
+	<h3>Graduate, technical course, Tecnico em Eletronica (technical Electronics) </h3>
+	<span class="place">SENAI NILO PEÇANHA</span>
+	<span class="location">Caxias do Sul Brasil </span>
+	</header>
+	</div>
+	</section>
+	<div class="date">
+	</div>
+	<div class="decorator">
+	</div>
+	<div class="details">
+	<header>
+	<h3>Massive Online Fee&ndash;Required Course (selective list)</h3>
+	</header>
+	<div class="concise">
+	<ul>
+	<li>.NET </li>
+	<li>C#</li>
+	<li>XUNIT</li>
+	<li>LINQ</li>
+	<li>Blazor</li>
+	<li>English englishlive.ef.com</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	</section>
+	</section>
+	<aside id="sidebar">
+	<div class="side-block" id="contact">
+	<h1>
+	Contact Info
+	</h1>
+	<ul>
+	<li><i class="fa fa-globe"></i> Rafael Parenza</li>
+	<li><i class="fa fa-linkedin"></i> linkedin.com/in/rafaelparenza</li>
+	<li><i class="fa fa-envelope"></i> rafaelparenza@hotmail.com</li>
+	<li><i class="fa fa-phone"></i> 5554999392919</li>
+	</ul>
+	</div>
+	<div class="side-block" id="skills">
+	<h1>
+	Skills
+	</h1>
+	<ul>
+	<li>Visual Studio (2015,2019,2022)
+</li><li>Visual Studio Code
+</li><li>SQL Server
+</li><li>Robo 3T (Mongo)
+</li><li>Android Studio
+</li><li>Postman
+</li><li>ThingSpeak
+</li><li>Wordpress
+</li><li>.NET 
+</li><li>C#
+</li><li>HTML 
+</li><li>JAVASCRIPT
+</li><li>TYPESCRIPT
+</li><li>CSS
+</li><li>JSON
+</li><li>ARDUINO
+</li><li>SQL
+</li><li>MONGODB
+</li><li>ANGULAR
+</li><li>ANGULARJS
+</li><li>RAZOR
+</li><li>BLAZOR
+</li><li>ENTITY FRAMEWORK
+</li><li>LINQ E LAMBDA
+</li><li>BOOTSTRAP
+</li><li>REST
+</li><li>GOOGLE CHARTS
+</li><li>AZURE
+</li><li>DOCKER
+</li><li>AZURE DEVOPS
+</li><li>PIPELINE CI/CD</li>
+	</ul>
+	<ul>
+	<li>Ordinarity</li>
+	<li>No name rights</li>
+	</ul>
+	</div>
+	<div class="side-block" id="disclaimer">
+	<code>Resume Rafael Parenza</code>
+	</div>
+	</aside>
+	</body>
+	</html>
