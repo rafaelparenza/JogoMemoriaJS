@@ -1,0 +1,53 @@
+ .cartas {
+            position: relative;
+            float: left;
+            width: 25%;
+            height: 33%;
+        }
+        
+        .imagens {
+            position: relative;            
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+        }
+        .topo{
+            position: absolute;
+            width:30%;
+            height: 10%;
+            left: 35%;
+            top:0%;   
+            align-items: center;
+            border: 1px solid black;
+            float:left;
+        }
+        
+        .principal {
+            position: absolute;
+            width: 30%;
+            height: 90%;
+            left: 35%;
+            top:10%;     
+            border: 1px solid black;
+            
+      
+        }
+        .lateral{
+            position: absolute;
+            width: 10%;
+            height: 500px;            
+            top:10%;     
+            border: 1px solid black; 
+        }
+        h1{
+            font-size: 2rem;
+            text-align: center;
+            color: white;
+        }
+        h2{
+            font-size: 2em;
+            text-align: center;
+        }
+        .menu_lateral{
+
+        }

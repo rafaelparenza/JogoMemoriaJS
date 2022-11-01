@@ -1,0 +1,199 @@
+<html>
+
+<head>
+    <link href="JOGO DA MEMORIA.css" type="text/css" rel="stylesheet">
+    <script>
+        var valores = [];
+        var imagens = new Array();
+        imagens[0] = "um.jpg";
+        imagens[1] = "dois.jpg";
+        imagens[2] = "tres.jpg";
+        imagens[3] = "quatro.jpg";
+        imagens[4] = "cinco.jpg";
+        imagens[5] = "seis.jpg";
+        imagens[6] = "um.jpg";
+        imagens[7] = "dois.jpg";
+        imagens[8] = "tres.jpg";
+        imagens[9] = "quatro.jpg";
+        imagens[10] = "cinco.jpg";
+        imagens[11] = "seis.jpg";
+        var carta1 = -1;
+        var carta2 = -1;
+        var posicao1;
+        var posicao2;
+        var valores = [];
+        var player = 1;
+        var pontos1 = 0, pontos2 = 0, autorizado = 0;
+        function randomImagens() {
+            var i, j;
+            var distribuicao;
+            var bloqueia = false;
+            i = 0;
+            while (valores.length < 12) {
+                distribuicao = Math.floor(Math.random() * 12);
+
+                if (valores.indexOf(distribuicao) == -1) {
+                    valores[i] = distribuicao;
+                    i++;
+                }
+            }
+            for (i = 0; i < 12; i++) {
+                document.getElementById("teste").innerHTML += " " + valores[i];
+            }
+        }
+        function embaralhar(array) 
+        {
+            var indice_atual = array.length, valor_temporario, indice_aleatorio;
+
+            while (0 !== indice_atual)
+            {
+
+                indice_aleatorio = Math.floor(Math.random() * indice_atual);
+                indice_atual -= 1;
+
+                valor_temporario = array[indice_atual];
+                array[indice_atual] = array[indice_aleatorio];
+                array[indice_aleatorio] = valor_temporario;
+            }
+
+            return array;
+        }
+        function virarCartas(valor) 
+        {
+            valor = Number(valor);
+            compararCartas(valores[valor], valor);
+        }
+        function compararCartas(cartas, posicao)
+         {
+            console.log("autorizado" + autorizado);
+
+            if (autorizado == 1) 
+            {
+                carta1 = -1;
+                carta2 = -1;
+                document.getElementById(posicao1).src = 'fundo.jpg';
+                document.getElementById(posicao2).src = 'fundo.jpg';
+                autorizado = 0;
+            }
+            else if (autorizado == 0)
+            {
+                document.getElementById(posicao).src = imagens[valores[posicao]]
+                if (carta1 == -1) 
+                {
+                    carta1 = cartas;
+                    posicao1 = posicao;
+                }
+                else if (posicao1 != posicao) 
+                {
+                    carta2 = cartas;
+                    posicao2 = posicao;
+                    console.log(imagens[carta1] + "   " + imagens[carta2]);
+                    console.log("POSICAO1" + posicao1 + "|POSICAO2   " + posicao2);
+                    console.log("CARTA1" + carta1 + "|CARTA2   " + carta2);
+
+                    if (imagens[carta1] == imagens[carta2]) 
+                    {
+                        document.getElementById(posicao1).setAttribute('onclick', '');
+                        document.getElementById(posicao2).setAttribute('onclick', '');
+                        jogador(1, 1)
+                        carta1 = -1;
+                        carta2 = -1;
+                        autorizado = 0;
+                    }
+                    else 
+                    {
+                        jogador(0, 0);
+                        autorizado = 1;
+                    }
+                }
+            }
+
+        }
+        function jogador(pontos, manter)
+         {
+            if (player == 1) 
+            {
+                pontos1 = Number(pontos) + pontos1;
+                document.getElementById("p1").innerHTML = pontos1;
+                if (manter == 0) 
+                {
+                    player = 2;
+
+                    var elem = document.getElementById("vez2");
+                    elem.style.color = 'green';
+                    elem = document.getElementById("vez1");
+                    elem.style.color = 'white';
+                }
+
+            }
+            else 
+            {
+                pontos2 = Number(pontos) + pontos2;
+                document.getElementById("p2").innerHTML = pontos2;
+                if (manter == 0) {
+                    player = 1;
+                    var elem = document.getElementById("vez1");
+                    elem.style.color = 'green';
+                    elem = document.getElementById("vez2");
+                    elem.style.color = 'white';
+                }
+            }
+        }
+    
+    </script>
+
+</head>
+
+
+<body style="background-color: black" onload="randomImagens()">
+    <div class="menu_lateral">
+        aa
+        <a> Baralho de Cachorros</a>
+        <a> Baralho de carros</a>
+        <a> Baralho de futebol</a>
+        <a> Baralho de Cachorros</a>
+        <a> Baralho Padrão </a>
+
+    </div>
+    <div class="lateral" style="left:25%">
+        <h1 id="vez1" style="color: green;">Player1</h1>
+        <h2 id="p1" style="color: white;"> </h2>
+    </div>
+    <div class="topo">
+        <h1 style="text-align: center"> JOGO DA MEMORIA </h1>
+    </div>
+    <div class="principal" id="divPrincipal">
+        <div class="cartas">
+            <img style="opacity: 30%" class="imagens" id="0" src="fundo.jpg" onclick="virarCartas(0)"> </div>
+        <div class="cartas">
+            <img class="imagens" id="1" src="fundo.jpg" onclick="virarCartas(1)"> </div>
+        <div class="cartas">
+            <img class="imagens" id="2" src="fundo.jpg" onclick="virarCartas(2)"> </div>
+        <div class="cartas">
+            <img class="imagens" id="3" src="fundo.jpg" onclick="virarCartas(3)"> </div>
+        <div class="cartas">
+            <img class="imagens" id="4" src="fundo.jpg" onclick="virarCartas(4)"> </div>
+        <div class="cartas">
+            <img class="imagens" id="5" src="fundo.jpg" onclick="virarCartas(5)"> </div>
+        <div class="cartas">
+            <img class="imagens" id="6" src="fundo.jpg" onclick="virarCartas(6)"> </div>
+        <div class="cartas">
+            <img class="imagens" id="7" src="fundo.jpg" onclick="virarCartas(7)"> </div>
+        <div class="cartas">
+            <img class="imagens" id="8" src="fundo.jpg" onclick="virarCartas(8)"> </div>
+        <div class="cartas">
+            <img class="imagens" id="9" src="fundo.jpg" onclick="virarCartas(9)"> </div>
+        <div class="cartas">
+            <img class="imagens" id="10" src="fundo.jpg" onclick="virarCartas(10)"> </div>
+        <div class="cartas">
+            <img class="imagens" id="11" src="fundo.jpg" onclick="virarCartas(11)"> </div>
+    </div>
+    <div class="lateral" style="left:65%">
+        <h1 id="vez2"> Player2 </h1>
+        <h2 id="p2" style="color: white;"> </h2>
+    </div>
+    <div id="teste"></div>
+
+</body>
+
+</html>
